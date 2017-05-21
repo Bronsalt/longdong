@@ -2,8 +2,8 @@
 function longDong(){
 	document.getElementById('dong').style.width = Math.cos(dongwidth)*1000 + "px";
   document.getElementById('dong').style.height = Math.cos(dongheight)*1000 + 'px';
-  dongheight= dongheight *1.00001;
-  dongwidth= dongwidth *1.00001;
+  dongheight= dongheight *1.0001;
+  dongwidth= dongwidth *1.0001;
   setTimeout(longDong, 1);
 };
 
