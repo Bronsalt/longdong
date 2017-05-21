@@ -1,6 +1,7 @@
-<script>function longDong(){
-	document.getElementById('dong').style.width = dongwidth + "px";
-  document.getElementById('dong').style.height = dongheight + 'px';
+<script>
+function longDong(){
+	document.getElementById('dong').style.width = Math.cos(dongwidth)*1000 + "px";
+  document.getElementById('dong').style.height = Math.cos(dongheight)*1000 + 'px';
   dongheight= dongheight *1.001;
   dongwidth= dongwidth *1.001;
   setTimeout(longDong, 1);
