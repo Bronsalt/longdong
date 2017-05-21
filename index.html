@@ -1,0 +1,18 @@
+<script>function longDong(){
+	document.getElementById('dong').style.width = dongwidth + "px";
+  document.getElementById('dong').style.height = dongheight + 'px';
+  dongheight= dongheight *1.001;
+  dongwidth= dongwidth *1.001;
+  setTimeout(longDong, 1);
+};
+
+var dongheight= 100;
+var dongwidth= 100;</script>
+<h2>
+Expand my dong
+</h2>
+<button onclick="longDong()">LONGDONG</button>
+<p>
+
+</p>
+<img src="http://i3.kym-cdn.com/photos/images/facebook/000/652/762/db3.jpg" id="dong" style="width:60px;height:117px;">
